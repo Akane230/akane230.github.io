@@ -711,6 +711,35 @@ section{
     width: 100%;
 }
 
+.activities{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.activities h1{
+    color: var(--text-color);
+    font-size: 3rem;
+}
+
+.activities h1 span{
+    color: var(--third-bg-color);
+}
+
+.activities-container{
+    margin-top: 1rem;
+    border: 0.5rem solid var(--third-bg-color);
+    padding: 1rem;
+}
+
+.activities-container li{
+    color: var(--text-color);
+    font-size: 2rem;
+}
+
+.activities-container li:nth-child(1){
+    margin-bottom: 1rem;
+}
 
 @media (max-width: 875px){
     .essentials{
