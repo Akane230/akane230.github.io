@@ -737,6 +737,10 @@ section{
     font-size: 2rem;
 }
 
+.activities-container li a{
+    color: var(--text-color);
+}
+
 .activities-container li:nth-child(1){
     margin-bottom: 1rem;
 }
