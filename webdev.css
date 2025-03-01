@@ -110,7 +110,7 @@ p{
 }
 
 .dropdown-menu.open{
-    height: 10rem;
+    height: 12rem;
 }
 
 section{
@@ -735,7 +735,7 @@ section{
 
 .activities-container li{
     color: var(--text-color);
-    font-size: 2rem;
+    font-size: clamp(1rem, 2vw, 3rem);
 }
 
 .activities-container li a{
@@ -745,6 +745,60 @@ section{
 .activities-container li:nth-child(1){
     margin-bottom: 1rem;
 }
+
+.courses{
+    background-color: var(--second-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.courses h1{
+    font-size: 3rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+.courses span{
+    color: var(--third-bg-color);
+}
+
+#search-box{
+    background-color: var(--second-bg-color);
+    border: 0.2rem solid var(--third-bg-color);
+    color: var(--text-color);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    width: 91%;
+    margin-bottom: 3rem;
+}
+
+.course-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    width: 100%;
+}
+
+.course-container div{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--third-bg-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    color: var(--text-color);
+    gap: 1rem;
+    font-size: clamp(1rem, 1vw, 2rem);
+}
+
+.course-container div ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 
 @media (max-width: 875px){
     .essentials{
