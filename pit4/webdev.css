@@ -728,9 +728,12 @@ section{
 }
 
 .activities-container{
+    display: flex;
+    flex-direction: column;
     margin-top: 1rem;
     border: 0.5rem solid var(--third-bg-color);
     padding: 1rem;
+    gap: 1rem;
 }
 
 .activities-container li{
@@ -742,9 +745,6 @@ section{
     color: var(--text-color);
 }
 
-.activities-container li:nth-child(1){
-    margin-bottom: 1rem;
-}
 
 .courses{
     background-color: var(--second-bg-color);
@@ -764,7 +764,7 @@ section{
     color: var(--third-bg-color);
 }
 
-/* #search-box{
+#search-box{
     background-color: var(--second-bg-color);
     border: 0.2rem solid var(--third-bg-color);
     color: var(--text-color);
@@ -773,7 +773,7 @@ section{
     font-size: 1.2rem;
     width: 91%;
     margin-bottom: 3rem;
-} */
+}
 
 .course-container{
     display: grid;
